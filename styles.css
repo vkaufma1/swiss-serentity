@@ -1,0 +1,256 @@
+ :root {
+    --dark-teal:#ACBDBA;
+    --light-teal:#CDDDDD;
+    --purple:#A599B5;
+    --gray:#2E2F2F;
+    --black:#051014;
+}
+
+body {
+    font-family: "Gill Sans", sans-serif;
+    background-color: var(--light-teal);
+    color: var(--black); 
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-teal); 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: var(--black);
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+nav a:active {
+    color: var(--light-teal);
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url(images/swiss-valley.jpg);
+    height: 200px;
+}
+
+.hero-text{
+    text-align: center;
+    padding: 40px 20px;
+}
+.hero img {
+    max-width: 200px;
+    height: auto;
+}
+
+.hero-contact {
+    background: url(images/swiss-valley.jpg) no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-contact h2 {
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px; 
+    margin: 0; 
+}
+
+.contact-left h2, .contact-left p {
+    margin: 0;
+    text-align: left; 
+}
+
+.contact-left img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--light-teal);
+}
+
+.main-content div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+
+.main-content p {
+    color: var(--gray);
+}
+
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.contact-page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+form {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    padding: 20px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: var(--purple);
+    outline: none;
+    box-shadow: 0 0 5px var(--dark-teal);
+}
+
+form input:invalid, form textarea:invalid {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.contact-form{
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.contact-form h2 {
+    font-size: 2.5rem;
+    color: var(--gray);
+}
+
+.contact-form p {
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    width: 100%;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+fieldset {
+    border: 2px solid var(--gray); 
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.radio-group label {
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+input[type="radio"] {
+    margin-right: 10px; 
+    transform: scale(2);
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: var(--gray);
+    background-color: var(--dark-teal);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--purple);
+}
+
+button:focus {
+    background-color: var(--purple);
+    outline: 2px solid var(--black);
+}
+
+footer {
+    background-color: var(--gray); 
+    color: var(--dark-teal);
+    text-align: center;
+    padding: 20px;
+}
